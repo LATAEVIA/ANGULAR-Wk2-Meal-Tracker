@@ -12,8 +12,13 @@ import { Food } from './food.model';
 })
 
 export class AppComponent {
-  public food: Food;
+  public foods: Food[];
   constructor(){
-    this.food = new Food ("Mac and Cheese", 450, "I topped it with chopped bacon and chives", 0)
+    this.foods = [
+      new Food("Mac and Cheese", 450, "I topped it with chopped bacon and chives", 0),
+      new Food("Tacos", 320, "I ate 5 tacos", 1),
+      new Food("Ice cream cone", 200, "The waffle cone came with sprinkles", 2),
+      new Food("Kale Salad", 175, "Ordered extra raisins", 3)
+    ];
   }
 }
