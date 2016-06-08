@@ -19,7 +19,8 @@ import {NewFoodComponent} from './new-food.component';
   </food-display>
   <edit-food-properties *ngIf="selectedFood" [food]= "selectedFood">
   </edit-food-properties>
-  <new-food (onSubmitNewFood)="assignId($event)"></new-food>
+  <new-food (onSubmitNewFood)="assignId($event)">
+  </new-food>
   `
 })
 
