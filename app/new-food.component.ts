@@ -7,20 +7,13 @@ import {Food} from './food.model';
   template: `
   <div class="col-sm-8">
     <h3>Log Food:</h3>
-    <input placeholder="Name of Food" class="input-lg form-control food-form">
-    <input type=number placeholder="Number of Calories" class="input-lg form-control food-form">
-    <input placeholder="Additional Details" class="input-lg form-control food-form">
-    <button (click)="addFood()">Add</button>
+    <input placeholder="Name of Food" class="input-lg form-control food-form" #newName>
+    <input type=number placeholder="Number of Calories" class="input-lg form-control food-form" #newCalorie>
+    <input placeholder="Additional Details" class="input-lg form-control food-form" #newDetail>
+    <button (click)="addFood(newName, newCalorie, newDetail)">Add</button>
   </div>
   `
 })
-
-//<input [(ngModel)]="food.calorie" class="input-lg form-control food-form"/>
-// <div class="task-form">
-//     <h3>Create Task:</h3>
-//     <input placeholder="Description" class="col-sm-8 input-lg">
-//     <button (click)="addTask()">Add</button>
-//   </div>
 
 export class NewFoodComponent {
   public onSubmitNewFood: EventEmitter<Food>;
