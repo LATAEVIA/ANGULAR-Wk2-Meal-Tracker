@@ -2,12 +2,12 @@ import {Pipe, PipeTransform} from 'angular2/core';
 import {Food} from './food.model';
 
 @Pipe({
-  name: "calories",
+  name: "healthy",
   pure: true
 })
 
 
-export class CaloriesPipe implements PipeTransform {
+export class HealthyPipe implements PipeTransform {
   transform (input: Food[], args){
     var desiredCalorieRange = args[0];
     if(desiredCalorieRange === "unhealthy") {
