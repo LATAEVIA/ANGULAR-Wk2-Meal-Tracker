@@ -18,7 +18,7 @@ import {HealthyPipe} from './healthy.pipe';
     <option value="unhealthy">Show Food Over 500 Calories</option>
     <option value="healthy">Show Food Under 500 Calories</option>
   </select>
-  <food-display *ngFor="#currentFood of foodList"
+  <food-display *ngFor="#currentFood of foodList | healthy:filterHealthy"
     (click)="foodClicked(currentFood)"
     [class.selected]="currentFood === selectedFood"
     [food]= "currentFood">
@@ -47,11 +47,11 @@ export class FoodListComponent {
   assignId(food: Food): void {
     food.id = this.foodList.length;
     this.foodList.push(food);
-    console.log(this.foodList);
+    // console.log(this.foodList);
   }
 
   onChange(filterOption) {
     this.filterHealthy = filterOption
-    console.log(this.filterHealthy);
+    // console.log(this.filterHealthy);
   }
 }
