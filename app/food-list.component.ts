@@ -19,7 +19,7 @@ import {NewFoodComponent} from './new-food.component';
   </food-display>
   <edit-food-properties *ngIf="selectedFood" [food]= "selectedFood">
   </edit-food-properties>
-  <new-food>(onSubmitNewFood)="assignId($event)"</new-food>
+  <new-food (onSubmitNewFood)="assignId($event)"></new-food>
   `
 })
 
@@ -35,8 +35,14 @@ export class FoodListComponent {
     this.selectedFood = clickedFood;
     this.onFoodSelect.emit(clickedFood);
   }
-  assignId(event) {
-    // this.foodList.push(food);
-    console.log(event);
+
+  assignId(food: Food): void {
+    console.log(food);
   }
 }
+
+// assignId(food: Food): void {
+//   food.id = this.foodList.length;
+//   this.foodList.push(food);
+//   console.log(this.foodList);
+// }
