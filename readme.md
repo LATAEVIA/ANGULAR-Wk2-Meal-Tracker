@@ -11,25 +11,25 @@ _This is an end-of-week project for my twelfth week at Epicodus. It uses HTML, C
 ## Setup/Installation Requirements
 
 
-* _Clone through the command line using:_
+_Clone through the command line using:_
 ```sh
 $ git clone https://github.com/LATAEVIA/ANGULAR-Wk2-Meal-Tracker.git
 ```
 
-* _Open files in any text editor to view source code_
+_Open files in any text editor to view source code_
 
-* _Set up dependencies:_
+_Set up dependencies:_
 ```sh
 $ npm install
 $ bower install
 ```
 
-* _Run development tasks:_
+_Run development tasks:_
 ```sh
 $ gulp build
 ```
 
-* _Implement development server with live reloading:_
+_Implement development server with live reloading:_
 ```sh
 $ gulp serve
 ```
