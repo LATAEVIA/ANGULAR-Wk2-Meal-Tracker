@@ -16,7 +16,7 @@ import { EditFoodDPorpertiesComponent } from './edit-food-properties.component';
     [class.selected]="currentFood === selectedFood"
     [food]= "currentFood">
   </food-display>
-  <edit-food-properties [food]= "selectedFood">
+  <edit-food-properties *ngIf="selectedFood" [food]= "selectedFood">
   </edit-food-properties>
   `
 })
