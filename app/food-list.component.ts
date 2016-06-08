@@ -38,13 +38,8 @@ export class FoodListComponent {
   }
 
   assignId(food: Food): void {
+    food.id = this.foodList.length;
     this.foodList.push(food);
     console.log(this.foodList);
   }
 }
-
-// assignId(food: Food): void {
-//   food.id = this.foodList.length;
-//   this.foodList.push(food);
-//   console.log(this.foodList);
-// }
