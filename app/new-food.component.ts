@@ -21,7 +21,9 @@ export class NewFoodComponent {
     this.onSubmitNewFood = new EventEmitter();
   }
   addFood(newName: HTMLInputElement, newCalorie: HTMLInputElement, newDetail: HTMLInputElement){
-    console.log("Loading all the noms...");
-    console.log(newName, newCalorie, newDetail);
+    console.log(newName.value, newCalorie.value, newDetail.value);
+    newName.value = "";
+    newCalorie.value = "";
+    newDetail.value = "";
   }
 }
