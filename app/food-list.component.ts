@@ -38,7 +38,8 @@ export class FoodListComponent {
   }
 
   assignId(food: Food): void {
-    console.log(food);
+    this.foodList.push(food);
+    console.log(this.foodList);
   }
 }
 
