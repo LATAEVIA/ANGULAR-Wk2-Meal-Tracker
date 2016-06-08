@@ -2,6 +2,7 @@ import { Component, EventEmitter } from 'angular2/core';
 import { Food } from './food.model';
 import { FoodComponent } from './food.component';
 import { EditFoodDPorpertiesComponent } from './edit-food-properties.component';
+import {NewFoodComponent} from './new-food.component';
 
 
 
@@ -9,7 +10,7 @@ import { EditFoodDPorpertiesComponent } from './edit-food-properties.component';
   selector: 'food-list',
   inputs: ['foodList'],
   outputs: ['onFoodSelect'],
-  directives: [FoodComponent, EditFoodDPorpertiesComponent],
+  directives: [FoodComponent, EditFoodDPorpertiesComponent, NewFoodComponent],
   template: `
   <food-display *ngFor="#currentFood of foodList"
     (click)="foodClicked(currentFood)"
@@ -18,6 +19,7 @@ import { EditFoodDPorpertiesComponent } from './edit-food-properties.component';
   </food-display>
   <edit-food-properties *ngIf="selectedFood" [food]= "selectedFood">
   </edit-food-properties>
+  <new-food></new-food>
   `
 })
 
