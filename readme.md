@@ -17,7 +17,7 @@ $ git clone https://github.com/LATAEVIA/ANGULAR-Wk2-Meal-Tracker.git
 ```
 
 _Open files in any text editor to view source code_
-
+#### OR
 _Set up dependencies:_
 ```sh
 $ npm install
