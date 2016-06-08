@@ -8,7 +8,10 @@ import { FoodListComponent } from './food-list.component';
   template: `
   <div class="container">
     <h1>Meal Tracker App</h1>
-    <food-list [foodList]="foods"></food-list>
+    <food-list
+    [foodList]="foods"
+    (onFoodSelect)="foodWasSelected($event)">
+    </food-list>
   </div>
   `
 })
