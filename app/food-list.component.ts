@@ -6,7 +6,9 @@ import { Food } from './food.model';
   inputs: ['foodList'],
   outputs: ['onFoodSelect'],
   template: `
-  <h3 *ngFor="#currentFood of foodList" (click)="foodClicked(currentFood)">
+  <h3 *ngFor="#currentFood of foodList"
+    (click)="foodClicked(currentFood)"
+    [class.selected]="currentFood === selectedFood">
     {{ currentFood.name }} <br> {{ currentFood.calorie }} <br> {{ currentFood.detail }}
   </h3>
   `
