@@ -23,4 +23,7 @@ export class AppComponent {
       new Food("Kale Salad", 175, "Ordered extra raisins", 3)
     ];
   }
+  foodWasSelected(clickedFood: Food): void {
+    console.log(clickedFood);
+  }
 }
