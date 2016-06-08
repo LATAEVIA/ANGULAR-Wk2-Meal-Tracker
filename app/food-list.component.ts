@@ -15,11 +15,13 @@ import { Food } from './food.model';
 export class FoodListComponent {
   public foodList: Food[];
   public onFoodSelect: EventEmitter<Food>;
+  public selectedFood: Food;
   constructor() {
     this.onFoodSelect = new EventEmitter();
   }
   foodClicked(clickedFood: Food): void {
     console.log("food-list", clickedFood);
+    this.selectedFood = clickedFood;
     this.onFoodSelect.emit(clickedFood);
   }
 }
