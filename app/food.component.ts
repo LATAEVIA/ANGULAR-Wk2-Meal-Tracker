@@ -10,5 +10,5 @@ import { Food } from './food.model';
 })
 
 export class FoodComponent {
-  public task: Food;
+  public food: Food;
 }
