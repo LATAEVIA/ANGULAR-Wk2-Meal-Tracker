@@ -1,8 +1,10 @@
 import { Component } from 'angular2/core';
 import { Food } from './food.model';
+import { FoodListComponent } from './food-list.component';
 
 @Component({
   selector: 'my-app',
+  directives: [FoodListComponent],
   template: `
   <div class="container">
     <h1>Meal Tracker App</h1>
