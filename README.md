@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is an end-of-week project for my twelfth week at Epicodus. It is a web application for tracking meals. Users can add and edit meals, the number of calories in each meal, and any relevant details about the meal. The user can also filter healthy and healthy meals._
+_This is an end-of-week project for my twelfth week at Epicodus. It is a web application for tracking meals. Users can add and edit meals, the number of calories in each meal, and any relevant details about the meal. The user can also filter by healthy and unhealthy meals._
 
 ## Prerequisites
 
